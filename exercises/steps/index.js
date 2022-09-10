@@ -17,22 +17,6 @@
 //       '### '
 //       '####'
 
-function steps(n) {
-  // default ds ['    ', '    ', '    ', '    ']
-  // n = 4
-  //
-  let ds = Array(n).fill("####");
-  for (let i = 0; i < ds.length; i++) {
-    let str = ds[i];
-    for (let j = i + 1; j < n; j++) {
-      console.log(str);
-      str = str.replace(str.charAt(j), " ");
-      console.log(str);
-    }
-    ds[i] = str;
-    //console.log(ds[i]);
-  }
-}
-steps(4);
+function steps(n) {}
 
 module.exports = steps;
